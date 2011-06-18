@@ -1,0 +1,8 @@
+development:
+  # twilio stuff
+  #
+  # If you don't already have a SID and token
+  # go to http://twilio.com and sign up for a demo
+  # account.
+  TWILIO_SID: your_sid_here
+  TWILIO_TKN: your_token_here

@@ -8,6 +8,8 @@ Bundler.require
 class Sosms < Sinatra::Base; end;
 
 class Sosms
+  # This will fail if you don't rename config/config.yml.example!
+  config = YAML.load_file('./config/config.yml')
 
   get '/' do
     haml :index
