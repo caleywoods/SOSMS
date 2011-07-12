@@ -5,6 +5,15 @@ Dir.glob("controllers/*.rb").each { |r| require_relative r }
 require 'bundler'
 Bundler.require
 
+# Datamapper ORM
+DataMapper::Database.setup({
+  :adapter  => 'sqlite3',
+  :host     => 'localhost',
+  :username => '',
+  :password => '',
+  :database => 'db/sosms'
+})
+
 class Sosms < Sinatra::Base; end;
 
 class Sosms
