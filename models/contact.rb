@@ -22,7 +22,7 @@ class Contact
   property :last_name,      String
   property :email,          String
   property :phone_number,   Integer
-  property :contact_method, Flag[ :email, :call, :sms, :none, :all ]
-  property :created_at,     DateTime
-  property :updated_at,     DateTime
+  property :contact_method, Flag[ :email, :call, :sms, :none, :all ], :default => [ :none ]
+  property :created_at,     DateTime, :lazy => true
+  property :updated_at,     DateTime, :lazy => true
 end
