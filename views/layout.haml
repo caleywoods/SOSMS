@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title SOSMS - We hope you never use it.
+    %img#header_img{:src => 'images/buoy.jpg', :height => "30px"}
+    %link{:rel =>'stylesheet', :type => "text/css", :href =>'css/style.css'}
+  %body
+    #wrapper
+      #header
+        %h1 SOSMS
+        %ol
+          %a(href="/")
+            %li Home
+          %a(href="/contact")
+            %li Add a Contact
+
+        #content
+          =yield
