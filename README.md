@@ -9,10 +9,12 @@ your town, Fooville. Your parents who live 8 hours away in Barbaz see on
 the news that Fooville has been devasted by a tornado and are instantly
 worried about you.
 
-Your parents, scared to death, hear about SOSMS and log onto the site.
-They enter your phone number and their phone number or
-email address.
+You, being the smart, tech saavy person you are just so happened to
+visit the SOSMS website a few months back and created an account with
+us. After creating said account, you added both your parents and your
+brother as contacts to be notified via voice/sms in the event you text
+our app. So...
 
 From your aid station in Fooville you text "SAFE" to the SOSMS phone
-number and your parents are immediately notified via SMS or email that a
-phone number matching the one they're searching for has checked in.
+number and your contacts are all immediately notified via SMS or a phone call
+that you've checked in.
