@@ -21,7 +21,7 @@ class Sosms
     haml :"contacts/edit"
   end
 
-  post '/contact' do
+  post '/contact/new' do
     #number = params[:phone_number]
     #message = params[:message]
     c = Contact.create(
