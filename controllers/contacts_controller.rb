@@ -18,16 +18,17 @@ class Sosms
 
   get '/contact/:id/edit' do
     @contact = Contact.first :id => params[:id]
-    haml :"contacts/edit.haml"
+    haml :"contacts/edit"
   end
 
   post '/contact' do
     #number = params[:phone_number]
     #message = params[:message]
-    c = Contact.create(:first_name => params[:first_name],
-                    :last_name => params[:last_name],
-                    :email=> params[:email],
-                    :phone_number => params[:phone_number])
+    c = Contact.create(
+      :first_name => params[:first_name],
+      :last_name => params[:last_name],
+      :email=> params[:email],
+      :phone_number => params[:phone_number])
 
     redirect "/contact/#{c.id}"
     #Twilio.connect(config['development']['TWILIO_SID'], config['development']['TWILIO_TKN'])
