@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'haml'
 gem 'redcarpet'
 gem 'twilio'
+gem 'devise'
 
 group :development do
   gem 'factory_girl_rails'
