@@ -1,7 +1,8 @@
 body {
   color: #333;
   font-size: 13px;
-  font-family: "helvetica neue", arial, helvetica, "lucida grande", sans-serif; }
+  font-family: "helvetica neue", arial, helvetica, "lucida grande", sans-serif;
+}
 
 #header>h1 {
   display: inline;
@@ -279,3 +280,5 @@ li {
 ol ol, ol ul, ul ul, ul ol {
   margin-left: 12px; }
 
+.contact_name {
+  text-size: 

@@ -1,6 +1,16 @@
-= @contact.first_name
-= @contact.last_name
+.contact_name
+  Name:
+  = @contact.first_name
+  = @contact.last_name
 %br
-= @contact.email
+.contact_email
+  Email Address:
+  = @contact.email
 %br
-= @contact.phone_number
+.contact_phone
+  Phone Number:
+  = @contact.phone_number
+%br
+%link{:href => "/contact"}Add Another Contact
+%link{:href => "/"}Home
+%link{:href => "/contact/#{@contact.id}/edit"}Edit Contact Info

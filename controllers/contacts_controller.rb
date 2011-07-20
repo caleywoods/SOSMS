@@ -5,13 +5,20 @@ class Sosms < Sinatra::Base; end;
 
 class Sosms
 
-   get '/contact' do
-    haml :form
+  # This is the "new" method
+  get '/contact/new' do
+    haml :"contacts/form"
   end
 
+  # This is the "show" method
   get '/contact/:id' do
     @contact = Contact.first :id => params[:id]
-    haml :show
+    haml :"contacts/show"
+  end
+
+  get '/contact/:id/edit' do
+    @contact = Contact.first :id => params[:id]
+    haml :"contacts/edit.haml"
   end
 
   post '/contact' do

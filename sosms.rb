@@ -14,7 +14,7 @@ DataMapper.auto_migrate!
 
 use Rack::Session::Cookie
 use Rack::Flash
-DMUserTable.cabinet_path = "#{Dir.pwd}/db/users.db"
+#DMUserTable.cabinet_path = "#{Dir.pwd}/db/users.db"
 
 class Sosms < Sinatra::Base; end;
 
