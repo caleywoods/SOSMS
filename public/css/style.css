@@ -6,11 +6,56 @@ body {
 
 #header>h1 {
   display: inline;
-  margin-top: 2px; }
+  margin-top: 2px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #111;
-  font-family: "helvetica neue", Helvetica, arial, sans-serif; }
+  font-family: "helvetica neue", Helvetica, arial, sans-serif;
+}
+
+.button {
+   border-top: 1px solid #a85e5e;
+   background: #5e2929;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff3333), to(#5e2929));
+   background: -moz-linear-gradient(top, #ff3333, #5e2929);
+   padding: 13.5px 27px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 16px;
+   font-family: Helvetica neue, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #b02929;
+   background: #b02929;
+   color: #000000;
+   }
+.button:active {
+   border-top-color: #ff0000;
+   background: #ff0000;
+   }
+
+ol#toc {
+  list-style: none;
+  line-height: 2em;
+}
+
+ol#toc li {
+  display: inline;
+}
+
+#top {
+  margin: 0;
+  float:right;
+}
 
 h1 {
   font-size: 28px;

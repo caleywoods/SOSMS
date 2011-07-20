@@ -6,22 +6,22 @@ class Sosms < Sinatra::Base; end;
 class Sosms
 
   # This is the "new" method
-  get '/contact/new' do
+  get '/contacts/new' do
     haml :"contacts/form"
   end
 
   # This is the "show" method
-  get '/contact/:id' do
+  get '/contacts/:id' do
     @contact = Contact.first :id => params[:id]
     haml :"contacts/show"
   end
 
-  get '/contact/:id/edit' do
+  get '/contacts/:id/edit' do
     @contact = Contact.first :id => params[:id]
     haml :"contacts/edit"
   end
 
-  post '/contact/new' do
+  post '/contacts/new' do
     #number = params[:phone_number]
     #message = params[:message]
     c = Contact.create(
@@ -30,7 +30,7 @@ class Sosms
       :email=> params[:email],
       :phone_number => params[:phone_number])
 
-    redirect "/contact/#{c.id}"
+    redirect "/contacts/#{c.id}"
     #Twilio.connect(config['development']['TWILIO_SID'], config['development']['TWILIO_TKN'])
     #Twilio::Sms.message(CALLER_ID, number, message)
   end

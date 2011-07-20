@@ -1,7 +1,4 @@
-require 'rubygems'
-require 'bundler/setup'
+# This file is used by Rack-based servers to start the application.
 
-require File.dirname(__FILE__) + '/sosms'
-use Rack::Static, :urls => ["/css", "/images"], :root => "public"
-
-run Sosms
+require ::File.expand_path('../config/environment',  __FILE__)
+run Sosms::Application

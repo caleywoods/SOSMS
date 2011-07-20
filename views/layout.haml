@@ -4,15 +4,14 @@
     %title SOSMS - We hope you never use it.
     %img#header_img{:src => 'images/buoy.jpg', :height => "30px"}
     %link{:rel =>'stylesheet', :type => "text/css", :href =>'css/style.css'}
+    %link{:type => "text/javascript", :src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
+    %link{:type => "text/javascript", :src => '/js/main.js'}
   %body
     #wrapper
       #header
         %h1 SOSMS
-        %ul
-          %a(href="/")
-            %li Home
-          %a(href="/contact/new")
-            %li Add a Contact
+        #top
+          != haml :"shared/nav"
 
         #content
           =yield
