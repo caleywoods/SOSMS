@@ -2,26 +2,28 @@
 # our controllers. We gain the ability to then logically
 # break each set of routes out into controllers
 Dir.glob("controllers/*.rb").each { |r| require_relative r }
+require './models/contact'
 require 'bundler'
+require 'digest/sha1'
+require 'rack-flash'
 Bundler.require
 
-# Datamapper ORM
-DataMapper::Database.setup({
-  :adapter  => 'sqlite3',
-  :host     => 'localhost',
-  :username => '',
-  :password => '',
-  :database => 'db/sosms'
-})
+#config stuffs
+DataMapper.setup(:default, "sqlite3:///#{Dir.pwd}/db/sosms.db")
+DataMapper.auto_migrate!
+
+use Rack::Session::Cookie
+use Rack::Flash
+DMUserTable.cabinet_path = "#{Dir.pwd}/db/users.db"
 
 class Sosms < Sinatra::Base; end;
 
 class Sosms
+  CALLER_ID = '4155992671'
   # This will fail if you don't rename config/config.yml.example!
   config = YAML.load_file('./config/config.yml')
 
   get '/' do
     haml :index
   end
-
 end
