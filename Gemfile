@@ -12,6 +12,7 @@ gem 'twilio'
 gem 'devise'
 gem 'flutie'
 gem 'jquery-rails'
+gem 'formtastic'
 
 group :development do
   gem 'factory_girl_rails'

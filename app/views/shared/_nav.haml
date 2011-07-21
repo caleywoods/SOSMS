@@ -1,3 +1,4 @@
 .nav
   = link_to "Home", root_path
-  = link_to_unless @user, "Login", new_user_session_path
+  = link_to_unless current_user, "Login", new_user_session_path
+  = link_to_if current_user, "Add Contact", new_contact_path

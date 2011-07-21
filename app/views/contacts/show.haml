@@ -11,6 +11,4 @@
   Phone Number:
   = @contact.phone_number
 %br
-%a{:href => "/contacts/new"}Add Another Contact
-%a{:href => "/"}Home
-%a{:href => "/contacts/#{@contact.id}/edit"}Edit Contact Info
+= link_to "Edit Contact Info", edit_contact_path
