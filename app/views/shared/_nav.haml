@@ -1,4 +1,7 @@
 .nav
   = link_to "Home", root_path
-  = link_to_unless current_user, "Login", new_user_session_path
-  = link_to_if current_user, "Add Contact", new_contact_path
+  - if current_user
+    = link_to "Add Contact", new_contact_path
+    = link_to "Logout", destroy_user_session_path
+  - else
+    = link_to "Login", new_user_session_path
