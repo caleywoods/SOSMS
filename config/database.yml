@@ -19,6 +19,3 @@ production:
   adapter: mysql2
   encoding: utf8
   database: sosms_prod
-  username: root
-  password:
-  socket: /tmp/mysql.sock
