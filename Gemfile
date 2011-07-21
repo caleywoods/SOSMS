@@ -10,6 +10,7 @@ gem 'haml'
 gem 'redcarpet'
 gem 'twilio'
 gem 'devise'
+gem 'flutie'
 
 group :development do
   gem 'factory_girl_rails'
