@@ -1,0 +1,8 @@
+www:
+  type: ruby
+  exclude_bundler_groups:
+    - development
+    - test
+  approot: sosms
+db:
+  type: mysql
