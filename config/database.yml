@@ -16,9 +16,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
+  adapter: mysql2
   encoding: utf8
   database: sosms_prod
-  username:
+  username: root
   password:
   socket: /tmp/mysql.sock
