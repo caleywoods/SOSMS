@@ -1,6 +1,5 @@
 www:
   type: ruby
-    - development
     - test
 db:
   type: mysql
