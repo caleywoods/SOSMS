@@ -41,7 +41,7 @@ GEM
     childprocess (0.2.0)
       ffi (~> 1.0.6)
     crack (0.1.8)
-    devise (1.4.0)
+    devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
       warden (~> 1.0.3)
@@ -138,7 +138,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  devise
+  devise (~> 1.4.2)
   factory_girl_rails
   flutie
   formtastic
