@@ -1,6 +1,6 @@
 ![SOSMS](http://i.imgur.com/2m9At.png)
 
-SOSMS is a [twilio](http://www.twilio.com/)/[sinatra](http://www.sinatrarb.com/) powered web app that allows people to connect with family during emergencies.
+SOSMS is a [twilio](http://www.twilio.com/)/[rails](http://rubyonrails.org) powered web app that allows people to connect with family during emergencies.
 
 ### How does this work? ###
 
