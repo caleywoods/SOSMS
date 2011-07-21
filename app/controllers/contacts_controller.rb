@@ -2,6 +2,11 @@ class ContactsController < ApplicationController
 
   before_filter :authenticate_user!
 
+  def index
+    @user = current_user
+    @contacts = @user.contacts
+  end
+
   def new
     @contact = Contact.new
 

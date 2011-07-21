@@ -1,0 +1,21 @@
+%h1 Your contacts
+- @contacts.each do |contact|
+  #contact_name
+    %b Name:
+    = contact.full_name
+  %br
+  #contact_email
+    %b Email:
+    = contact.email
+  %br
+  #contact_phone
+    %b Phone:
+    = contact.phone_number
+  %br
+  #contact_methods
+    %b Contact Methods:
+    - if contact.voice
+      Voice
+    - if contact.sms
+      SMS
+  %hr
