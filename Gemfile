@@ -14,10 +14,12 @@ gem 'flutie'
 gem 'jquery-rails'
 gem 'formtastic'
 
-group :development do
+gem 'rspec-rails', :group => [:test, :development]
+
+group :test do
   gem 'factory_girl_rails'
-  gem 'rspec-rails'
-  gem 'autotest'
+  gem 'guard-rspec'
+  gem 'capybara'
 end
 
 # Use unicorn as the web server
