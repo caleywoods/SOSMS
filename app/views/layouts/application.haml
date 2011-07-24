@@ -7,9 +7,12 @@
   = image_tag "logo.png", :height => "50px"
   = render :partial => "shared/nav"
 %body
-  %p.notice
+  .notice
     = notice
-  %p.alert
+  .alert
     = alert
 
   = yield
+
+#footer
+  = render :partial => "shared/footer"

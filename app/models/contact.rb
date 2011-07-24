@@ -14,6 +14,24 @@ class Contact < ActiveRecord::Base
     "#{self.first_name} #{self.last_name}"
   end
 
+  def text(message)
+    Twilio.connect('AC10984a77f9963a1cdb24ccb400112124', '151a5f0578c3b22adc7229727648a04b')
+    Twilio::Sms.message('4172082640', self.phone_number, message)
+  end
+
+  def call
+    Twilio.connect('AC10984a77f9963a1cdb24ccb400112124', '151a5f0578c3b22adc7229727648a04b')
+    Twilio::Call.make('4172082640', self.phone_number, 'http://582dc2b5.dotcloud.com/call')
+  end
+
+  def notify
+    if voice?
+      call
+    elsif sms?
+      text("Your contact has checked in with SOSMS. Despite disaster they're safe.")
+    end
+  end
+
   def to_param
     "#{id}-#{first_name}-#{last_name}"
   end

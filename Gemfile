@@ -7,13 +7,14 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 gem 'haml'
-gem 'redcarpet'
+gem 'rdiscount'
 gem 'twilio'
 gem 'devise', '~> 1.4.2'
 gem 'flutie'
 gem 'jquery-rails'
 gem 'formtastic'
 gem 'mysql2'
+gem 'builder'
 
 gem 'rspec-rails', :group => [:test, :development]
 

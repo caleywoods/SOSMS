@@ -1,14 +1,18 @@
+%h2#contact_show_header Contact Details
 .contact_name
-  Name:
-  = @contact.first_name
-  = @contact.last_name
+  #label Name:
+  #value
+    = @contact.full_name
 %br
 .contact_email
-  Email Address:
-  = @contact.email
+  #label Email Address:
+  #value
+    = @contact.email
 %br
 .contact_phone
-  Phone Number:
-  = @contact.phone_number
+  #label Phone Number:
+  #value
+    = @contact.phone_number
 %br
 = link_to "Edit Contact Info", edit_contact_path
+= link_to "Add Another Contact", new_contact_path
