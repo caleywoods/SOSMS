@@ -16,7 +16,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: sosms_prod
   username: root
