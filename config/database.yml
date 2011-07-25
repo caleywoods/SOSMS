@@ -19,6 +19,9 @@ production:
   adapter: mysql2
   encoding: utf8
   database: sosms_prod
+  pool: 5
   username: root
   password: zAzM3Ap8pBIfYESJaZNz
-  socket: /tmp/mysql.sock
+  port: 11327
+  host: f93f74fc.dotcloud.com
+
