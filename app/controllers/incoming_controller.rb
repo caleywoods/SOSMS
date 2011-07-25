@@ -9,9 +9,6 @@ class IncomingController < ApplicationController
   end
 
   def call
-    @call = BASE_URL + '/call.xml'
-    respond_to do |format|
-      format.xml { @call }
-    end
+    render :xml => {:say => "Hello, you got it"}.to_xml
   end
 end
