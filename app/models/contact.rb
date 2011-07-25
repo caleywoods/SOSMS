@@ -28,8 +28,12 @@ class Contact < ActiveRecord::Base
     if voice?
       call
     elsif sms?
-      text("Your contact has checked in with SOSMS. Despite disaster they're safe.")
+      text("#{overlord} has checked in with SOSMS. Despite disaster they're safe.")
     end
+  end
+
+  def overlord
+    User.find(self.user_id).email
   end
 
   def to_param

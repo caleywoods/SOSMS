@@ -10,9 +10,6 @@ Sosms::Application.routes.draw do
   post 'incoming/text'
   post 'incoming/call'
 
-  #match '/incoming/text' => 'incoming#text', :via => :post
-  #match '/incoming/call' => 'incoming#call', :via => :post
-
   match ':controller(/:action(.:format))'
   match ':controller(/:action(/id(.:format)))'
 
