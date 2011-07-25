@@ -17,8 +17,9 @@ test:
 
 production:
   adapter: mysql2
+  port: 11327
   encoding: utf8
   database: sosms_prod
   username: root
-  password:
+  password: zAzM3Ap8pBIfYESJaZNz
   socket: /tmp/mysql.sock
