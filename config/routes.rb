@@ -3,10 +3,6 @@ Sosms::Application.routes.draw do
 
   root :to => "home#index"
 
-  namespace :user do
-    root :to => "contacts#index"
-  end
-
   post 'incoming/text'
   post 'incoming/call'
 

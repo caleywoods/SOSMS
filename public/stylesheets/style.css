@@ -26,6 +26,11 @@ body {
   color: #000;
 }
 
+.nav>#account_email {
+  text-size: 10px;
+  text-align: center;
+}
+
 .signUp {
 	font-family: "helvetica neue", Helvetica, sans-serif;
 	font-size: 14px;
