@@ -7,8 +7,4 @@ class IncomingController < ApplicationController
 
     render :xml => {:Sms => "Message received, contacts notified. Be safe!"}.to_xml(:root => 'Response')
   end
-
-  def call
-    render :xml => {:Say => "Hello, you got it"}.to_xml(:root => 'Response')
-  end
 end
