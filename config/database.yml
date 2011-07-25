@@ -17,7 +17,6 @@ test:
 
 production:
   adapter: mysql2
-  port: 11327
   encoding: utf8
   database: sosms_prod
   username: root
