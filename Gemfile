@@ -13,7 +13,7 @@ gem 'devise', '~> 1.4.2'
 gem 'flutie'
 gem 'jquery-rails'
 gem 'formtastic'
-gem 'mysql'
+gem 'mysql2', '~> 0.2.7'
 gem 'builder'
 
 gem 'rspec-rails', :group => [:test, :development]
