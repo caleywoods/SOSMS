@@ -21,7 +21,7 @@ class Contact < ActiveRecord::Base
 
   def call
     Twilio.connect('AC10984a77f9963a1cdb24ccb400112124', '151a5f0578c3b22adc7229727648a04b')
-    Twilio::Call.make('4172082640', self.phone_number, 'http://582dc2b5.dotcloud.com/call')
+    Twilio::Call.make('4172082640', self.phone_number, 'http://582dc2b5.dotcloud.com/incoming/call')
   end
 
   def notify
