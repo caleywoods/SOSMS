@@ -15,12 +15,11 @@ class Contact < ActiveRecord::Base
   end
 
   def text(message)
-    Twilio.connect('AC10984a77f9963a1cdb24ccb400112124', '151a5f0578c3b22adc7229727648a04b')
+    Twilio.connect(config['TWILIO_SID'], config['TWILIO_TKN'])
     Twilio::Sms.message('4172082640', self.phone_number, message)
   end
 
   #def call
-    #Twilio.connect('AC10984a77f9963a1cdb24ccb400112124', '151a5f0578c3b22adc7229727648a04b')
     #Twilio::Call.make('4172082640', self.phone_number, 'http://582dc2b5.dotcloud.com/incoming/call')
   #end
 
