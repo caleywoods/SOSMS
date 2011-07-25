@@ -5,10 +5,10 @@ class IncomingController < ApplicationController
     @user = User.find_by_phone_number(params[:From][1..-1])
     @user.contacts.each {|contact| contact.notify}
 
-    render :xml => {:sms => "Message received, contacts notified. Be safe!"}.to_xml(:root => 'Response')
+    render :xml => {:Sms => "Message received, contacts notified. Be safe!"}.to_xml(:root => 'Response')
   end
 
   def call
-    render :xml => {:say => "Hello, you got it"}.to_xml(:root => 'Response')
+    render :xml => {:Say => "Hello, you got it"}.to_xml(:root => 'Response')
   end
 end
