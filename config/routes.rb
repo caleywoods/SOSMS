@@ -10,8 +10,5 @@ Sosms::Application.routes.draw do
   post 'incoming/text'
   post 'incoming/call'
 
-  match ':controller(/:action(.:format))'
-  match ':controller(/:action(/id(.:format)))'
-
   resources :contacts
 end
