@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 # Persistence
 gem 'sqlite3'
-#gem 'mysql2', '~> 0.2.7'
+gem 'mysql2', '~> 0.2.7'
 # markup
 gem 'haml'
 gem 'rdiscount'
