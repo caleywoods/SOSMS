@@ -1,4 +1,7 @@
 www:
   type: ruby
+  exclude_bundler_groups:
+    - development
+    - test
 data:
   type: mysql
