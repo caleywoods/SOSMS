@@ -41,6 +41,8 @@ GEM
     childprocess (0.2.0)
       ffi (~> 1.0.6)
     crack (0.1.8)
+    css3buttons (0.9.5)
+      actionpack (>= 3.0.0)
     devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
@@ -137,8 +139,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder
   capybara
+  css3buttons
   devise (~> 1.4.2)
   factory_girl_rails
   flutie
