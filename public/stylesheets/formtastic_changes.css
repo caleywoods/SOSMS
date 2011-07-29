@@ -15,3 +15,13 @@ form.formtastic fieldset ol li fieldset legend { margin-left: -6px;}
 form.formtastic fieldset > ol > li label {
   font-weight:bold;
 }
+
+form.formtastic input.button, form.formtastic.button.button {
+  height: 35px;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: sans-serif;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}

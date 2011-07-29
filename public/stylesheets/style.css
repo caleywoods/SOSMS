@@ -14,23 +14,6 @@ body {
   float: right;
 }
 
-.nav>a {
-  font-size: 1.2em;
-  margin: 2px;
-  padding-bottom: 5px;
-  text-decoration: none;
-  border-bottom: .15em dashed #590101;
-}
-
-.nav>a:visited {
-  color: #000;
-}
-
-.nav>#account_email {
-  text-size: 10px;
-  text-align: center;
-}
-
 .signUp {
 	font-family: "helvetica neue", Helvetica, sans-serif;
 	font-size: 14px;
@@ -57,6 +40,18 @@ body {
 	text-shadow:
 		0px -1px 0px rgba(000,000,000,0.7),
 		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.signUp:hover {
+  color: #fff;
+  background: -moz-linear-gradient(
+		top,
+		#e00000 0%,
+		#590101);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e00000),
+		to(#590101));
 }
 
 .contact_name > #label {

@@ -1,4 +1,9 @@
 - semantic_form_for @contact do |form|
-  = form.inputs
-  %br
-  = form.buttons
+  - form.inputs do
+    = form.input :first_name
+    = form.input :last_name
+    = form.input :email
+    = form.input :phone_number
+    = form.input :sms
+  - form.buttons do
+    = button_submit_tag "Create Contact"

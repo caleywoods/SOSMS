@@ -1,12 +1,12 @@
 .nav
-  #account_email
-    - if current_user
+  - button_group do
+    -#- if current_user
       = current_user.email
-  - unless current_user
-    = link_to "Home", root_path
-  - if current_user
-    = link_to "Home", contacts_path
-    = link_to "Add Contact", new_contact_path
-    = link_to "Logout", destroy_user_session_path
-  - else
-    = link_to "Login", new_user_session_path
+    - unless current_user
+      = pill_button_link_to "Home", root_path
+    - if current_user
+      = pill_button_link_to "Home", contacts_path
+      = user_pill_button_link_to "Add Contact", new_contact_path
+      = negative_pill_button_link_to "Logout", destroy_user_session_path
+    - else
+      = primary_pill_button_link_to "Login", new_user_session_path

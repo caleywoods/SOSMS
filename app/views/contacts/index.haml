@@ -1,5 +1,6 @@
 %h1 Your contacts
 = "No Contacts Yet!" if @contacts.blank?
+.contact
 - @contacts.each do |contact|
   #contact_name
     %b Name:
@@ -19,4 +20,8 @@
       Voice
     - if contact.sms
       SMS
+  %br
+    - button_group do
+      = edit_button_link_to "edit", edit_contact_path(contact)
+      = trash_button_link_to "delete", contact, :confirm => 'You sure?', :method => :delete
   %hr

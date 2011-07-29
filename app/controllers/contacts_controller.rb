@@ -39,4 +39,13 @@ class ContactsController < ApplicationController
   def edit
     @contact = Contact.find(params[:id])
   end
+
+  def destroy
+    @contact = Contact.find(params[:id])
+    @contact.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(contacts_path) }
+    end
+  end
 end

@@ -14,5 +14,6 @@
   #value
     = @contact.phone_number
 %br
-= link_to "Edit Contact Info", edit_contact_path
-= link_to "Add Another Contact", new_contact_path
+- button_group do
+  = primary_edit_button_link_to "Edit Contact Info", edit_contact_path
+  = user_button_link_to "Add Another Contact", new_contact_path
