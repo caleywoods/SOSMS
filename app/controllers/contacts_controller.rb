@@ -40,6 +40,18 @@ class ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
   end
 
+  def update
+    @contact = Contact.find(params[:id])
+
+    respond_to do |format|
+      if @contact.update_attributes(params[:contact])
+        format.html { redirect_to(contacts_path, :notice => 'Contact updated!') }
+      else
+        format.html { render :action => 'edit' }
+      end
+    end
+  end
+
   def destroy
     @contact = Contact.find(params[:id])
     @contact.destroy
